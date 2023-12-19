@@ -109,7 +109,7 @@ export default function Page() {
         <p>To use the colour picker:</p>
         <p>Click the colour picker to choose a colour</p>
         <p>De-select colour picker by clicking background</p>
-        <p>Press 'A' to save a colour from the colour picker.</p>
+        <p>Press A to save a colour from the colour picker.</p>
         <p>No save function so take a screenshot.</p>
         <p>Have fun!</p>
 
