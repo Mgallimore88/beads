@@ -2,6 +2,7 @@
 
 import React from "react";
 import { type Sketch } from "@p5-wrapper/react";
+// @ts-ignore
 import { NextReactP5Wrapper } from "@p5-wrapper/next";
 
 const sketch: Sketch = (p5) => {
