@@ -1,3 +1,4 @@
+import { P5CanvasInstance } from "@p5-wrapper/react";
 import { Color } from "./types";
 
 export class Circle {
@@ -17,7 +18,7 @@ export class Circle {
     this.color = color;
   }
 
-  public draw(p5: any) {
+  public draw(p5: P5CanvasInstance) {
     if (Array.isArray(this.color)) {
       p5.fill(this.color[0], this.color[1], this.color[2]);
     } else {
@@ -48,7 +49,7 @@ export class Row {
     );
   }
 
-  public draw(p5: any) {
+  public draw(p5: P5CanvasInstance) {
     this.circles.forEach((circle) => {
       circle.draw(p5);
     });
