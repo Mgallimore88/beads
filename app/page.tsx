@@ -15,11 +15,11 @@ const sketch: Sketch = (p5) => {
   const rowManager = new RowManager(undefined, undefined, 23);
   const colorPicker = new ColorPicker();
 
-  let myPicker: any; 
+  let myPicker: any;
 
   p5.setup = () => {
     p5.createCanvas(width, height, p5.WEBGL);
-    myPicker = p5.createColorPicker('deeppink');
+    myPicker = p5.createColorPicker("deeppink");
     myPicker.position(0, 0);
   };
 
@@ -97,10 +97,10 @@ const sketch: Sketch = (p5) => {
 
 export default function Page() {
   return (
-    <div style={{display: 'flex'}}>
+    <div style={{ display: "flex" }}>
       <NextReactP5Wrapper sketch={sketch} />
-      <div style={{paddingLeft: 8}}>
-        <h1 style={{fontSize: 32 }}>Welcome!</h1>
+      <div style={{ paddingLeft: 8 }}>
+        <h1 style={{ fontSize: 32 }}>Welcome!</h1>
         <p>App for designing colour patterns:</p>
         <p>Runs in a browser on a laptop.</p>
         <p>Press the arrow keys to design the shape.</p>
@@ -112,8 +112,7 @@ export default function Page() {
         <p>Press A to save a colour from the colour picker.</p>
         <p>No save function so take a screenshot.</p>
         <p>Have fun!</p>
-
       </div>
     </div>
-  )
+  );
 }
